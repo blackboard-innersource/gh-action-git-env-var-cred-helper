@@ -1,0 +1,5 @@
+name: git-env-var-cred-helper
+description: Configures git to use environment variables for authentication with a git provider
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
