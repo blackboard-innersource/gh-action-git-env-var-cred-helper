@@ -963,7 +963,7 @@ const exec = __webpack_require__(986);
 async function run() {
   try {
     exec.exec("git", ["config", "--global", "credential.helper",
-      "'!f() { sleep 1; echo \"username=${GIT_USER}\"; echo \"password=${GIT_PASS}\"; }; f'"]);
+      "!f() { sleep 1; echo \"username=${GIT_USER}\"; echo \"password=${GIT_PASS}\"; }; f"]);
   } catch (error) {
     core.setFailed(error.message)
   }
